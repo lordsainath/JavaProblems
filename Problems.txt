@@ -1,0 +1,25 @@
+1.reverse a string
+  - create a empty string and loop until the length-1 starting from 0 and then add the char from end to new empty string
+
+2.reverse a string word without changing the order
+ -create a empty string then split the sentence into the words using split [ ] and store it in an array then loop through an array and create an empty string into it loop through each word
+  and reverse it and after the inner loop ends add the reversed word into the first empty string with spaces.
+
+3.Check Palindrome
+ -first make Boolean as true and then loop starting from 0 till half size of the string length and in the if statement 	we are checking the values from starring and ending are not equal if 
+  any match found it will break the loop and return the result.
+
+4. count the words in string
+ - first we have to store the string words into an array using split before that we have to remover the trailing spaces using trim and then crate a counter variable and loops through words and array and increase the counter and after that return the count (we can directly count using array method which is length)
+
+5.count the vowels in a string
+ - first create a count variable and then convert the string into lowercase then loops from 0 till length-1 and then add the char into char variable and check in the if statement that char is vowel or not using or operator.
+
+6.Find the First Non-Repeating Character
+ -loops through each char of a string store it in a char and create a Boolean for isrepeat and then one more time loop through the string for each character and compare the outer loop  char with all the new characters and  if char is found repeat break the loop and if not return the result.
+
+Remove Duplicates from a String
+Find the Most Frequent Character
+Replace Spaces with a Specific Character
+Check for Anagrams
+Check Palindrome of number
