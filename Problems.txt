@@ -18,8 +18,16 @@
 6.Find the First Non-Repeating Character
  -loops through each char of a string store it in a char and create a Boolean for isrepeat and then one more time loop through the string for each character and compare the outer loop  char with all the new characters and  if char is found repeat break the loop and if not return the result.
 
+7.Check Palindrome of number
+ -first we have to stroe the number into new var which will be original num also create reversernum with 0 after that use while loop to extract the digit then store it in revesenum using operation and then divide the num by 10 to remover the last digit this will continue till num = 0;after that check revesrsenum is equal to original num.
+
+ 8.Check for Anagrams
+  - first we have to check the length of the two strins is it is not equal it will not check further.after that we have to create an int array which will store the frequncy of each character in a string for right now we are just checking the string in lowercase that's why we are just taking the array size of 26.after that loop through each string and add the string charcter index size to freq array using [ch - 'a'] this formula convert the char to index and after that we are incrementing the size.after successfull adding of two freq array we loop thorugh each index size of both array and if they did not match we stop the program and if they are same we return the string is anagram.
+
+
+9.Find the Most Frequent Character
+
+
 Remove Duplicates from a String
-Find the Most Frequent Character
 Replace Spaces with a Specific Character
-Check for Anagrams
-Check Palindrome of number
+
