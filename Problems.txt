@@ -9,25 +9,66 @@
  -first make Boolean as true and then loop starting from 0 till half size of the string length and in the if statement 	we are checking the values from starring and ending are not equal if 
   any match found it will break the loop and return the result.
 
-4. count the words in string
- - first we have to store the string words into an array using split before that we have to remover the trailing spaces using trim and then crate a counter variable and loops through words and array and increase the counter and after that return the count (we can directly count using array method which is length)
-
-5.count the vowels in a string
- - first create a count variable and then convert the string into lowercase then loops from 0 till length-1 and then add the char into char variable and check in the if statement that char is vowel or not using or operator.
-
-6.Find the First Non-Repeating Character
- -loops through each char of a string store it in a char and create a Boolean for isrepeat and then one more time loop through the string for each character and compare the outer loop  char with all the new characters and  if char is found repeat break the loop and if not return the result.
-
-7.Check Palindrome of number
+  4.Check Palindrome of number
  -first we have to stroe the number into new var which will be original num also create reversernum with 0 after that use while loop to extract the digit then store it in revesenum using operation and then divide the num by 10 to remover the last digit this will continue till num = 0;after that check revesrsenum is equal to original num.
 
- 8.Check for Anagrams
+
+5. count the words in string
+ - first we have to store the string words into an array using split before that we have to remover the trailing spaces using trim and then crate a counter variable and loops through words and array and increase the counter and after that return the count (we can directly count using array method which is length)
+
+6.count the vowels in a string
+ - first create a count variable and then convert the string into lowercase then loops from 0 till length-1 and then add the char into char variable and check in the if statement that char is vowel or not using or operator.
+
+ 7.count the consonants i a string
+
+
+
+
+8.Find the First Non-Repeating Character
+ -loops through each char of a string store it in a char and create a Boolean for isrepeat and then one more time loop through the string for each character and compare the outer loop  char with all the new characters and  if char is found repeat break the loop and if not return the result.
+
+
+ 9.Check for Anagrams
   - first we have to check the length of the two strins is it is not equal it will not check further.after that we have to create an int array which will store the frequncy of each character in a string for right now we are just checking the string in lowercase that's why we are just taking the array size of 26.after that loop through each string and add the string charcter index size to freq array using [ch - 'a'] this formula convert the char to index and after that we are incrementing the size.after successfull adding of two freq array we loop thorugh each index size of both array and if they did not match we stop the program and if they are same we return the string is anagram.
 
 
-9.Find the Most Frequent Character
+10.Find the Most Frequent Character
 
 
-Remove Duplicates from a String
-Replace Spaces with a Specific Character
 
+
+10.Replace Spaces with a Specific Character
+
+11.Remove Duplicates from a String
+
+
+12.Find the Longest Word in a String
+ -first create variable to store the length and longest word after that wap to split the words also write if word length is greate thatn length assign also assign current word to longest word.
+
+
+
+13.Capitalize the First Letter of Each Word
+- first create a var to store the capitalized string also a var to store current word then start for loop for split the word and if the word length is 1 capitalize it if not apped the char and at the end add " " and add it to the capitalized string var and reset the currentword.
+
+
+23.Find the First Repeated Character
+
+14.Check if a String is a Subsequence of Another
+
+
+
+15.Find All Permutations of a String
+16.Find All Substrings of a String
+17.Check if Two Strings are Rotations of Each Other
+18.Count Occurrences of a Substring
+19.Check if a String Contains Only Digits
+20.Reverse Words in a String
+21.Find the Second Most Frequent Character
+22.Remove All Occurrences of a Character
+24.Find the Longest Palindromic Substring
+25.Sort Characters in a String
+26.Find the Number of Uppercase and Lowercase Letters
+27.Check if a String is a Valid Shuffle of Two Strings
+28.Check if a String Contains Balanced Parentheses
+29.Compress a String
+30.Remove Characters from the First String that are Present in the Second String
