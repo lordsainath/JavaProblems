@@ -11,14 +11,17 @@ Here are some beginner-friendly **Java array problems** to practice:
    - Calculate the sum of all elements in an array.  
 
    
-5. **Count Even and Odd Numbers**  
+4. **Count Even and Odd Numbers**  
    - Count the number of even and odd elements in an array.  
 
-4. **Find Second Largest Number**  
+5. "Sort an array using bubble sort"
+     
+
+6. **Find Second Largest Number**  
    - Find the second-largest number in an array **without sorting**.  
 
 
-6. **Check if Array is Sorted**  
+7. **Check if Array is Sorted**  
    - Write a function to check if an array is sorted in ascending order.  
 
 ### **Intermediate Level:**  
