@@ -27,6 +27,7 @@ Here are some beginner-friendly **Java array problems** to practice:
 ### **Intermediate Level:**  
 7. **Remove Duplicates from an Array**  
    - Remove duplicate elements from an array and print the updated array.  
+   solution- first we take teh input from the user and  after that we create a method which will take the return as a int array  for removing duplciate and pass the arugement array and length of the array. the method first create a temp array and newsize varible to store.after that loop through each item and set isduplicate as false then in the outer loop loop till newsize if element found isduplicate will be true and innter loop terminate and if not found newsize will increase and element is added to the temp array;
 
 8. **Rotate Array to the Left by K Positions**  
    - Rotate an array **left by K positions**.  
