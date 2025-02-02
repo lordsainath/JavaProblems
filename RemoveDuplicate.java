@@ -1,37 +1,58 @@
+
+
 import java.util.Scanner;
 
 public class RemoveDuplicate {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s1 = sc.nextLine().toLowerCase().trim();
-       
-        String result = removeduplicate(s1);
-        System.out.println(result);
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter How many numbers that you want to add in an array ");
+        int length = sc.nextInt();
+
+        int[] numbers = new int[length];
+        for (int i = 0; i < length; i++) {
+            System.out.println("Enter the " + (i + 1) + " Number in an array");
+            int num = sc.nextInt();
+            numbers[i] = num;
+        }
+        int[] unique = removeduplicate(numbers, length);
+        for (int uniquenumber : unique) {
+            System.out.print(uniquenumber + " ");
+        }
         sc.close();
     }
 
-    static String removeduplicate(String s1){
-        StringBuilder result = new StringBuilder();
-        if(s1.length() == 0){
-            return "Empty String";
-        }
+    private static int[] removeduplicate(int[] numbers, int length) {
 
-        boolean[] freq = new boolean[26];
+        int[] temparray = new int[length];
+        int newsize = 0;
 
-        for(int i=0;i<s1.length();i++){
-            char ch = s1.charAt(i);
+        for (int i = 0; i < length; i++) {
 
-            if(!freq[ch - 'a']){
-                result.append(ch);
-                freq[ch - 'a'] = true;
+            boolean isduplicate = false;
+            for (int j = 0; j < newsize; j++) {
+                if (numbers[i] == temparray[j]) {
+                    isduplicate = true;
+                    break;
+                }
+
             }
+
+            if (!isduplicate) {
+                temparray[newsize] = numbers[i];
+                newsize++;
+            }
+
         }
 
+        int[] uniquearray = new int[newsize];
+        for (int i = 0; i < newsize; i++) {
+            uniquearray[i] = temparray[i];
 
-  
-        return result.toString();
+        }
+
+        return uniquearray;
 
     }
-    
+
 }
